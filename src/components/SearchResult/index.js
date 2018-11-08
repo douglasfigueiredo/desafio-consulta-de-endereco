@@ -10,7 +10,7 @@ const SearchResult = () => (
     <p>Vila Guilherme</p>
     <p>São Paulo - SP</p>
     <p>02050-010</p>
-    <Maps />
+    <Maps positionCenter="Rua Miguel Mentem" />
   </Container>
 );
 
