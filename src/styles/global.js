@@ -8,8 +8,9 @@ const GlobalStyle = createGlobalStyle`
     outline: 0;
   }
 
-  html {
+  html, body {
     background: #FFF;
+    height: 100%;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
   }
