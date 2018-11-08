@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
+  width: 600px;
+  min-width: 420px;
+  margin: 0 auto;
   flex-direction: column;
   align-items: center;
   margin: 30px;
@@ -23,7 +26,6 @@ export const Form = styled.div`
   align-items: center;
   margin-top: 20px;
   width: 100%;
-  max-width: 400px;
 
   span {
     color: #444;

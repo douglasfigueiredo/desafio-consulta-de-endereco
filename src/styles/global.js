@@ -10,14 +10,12 @@ const GlobalStyle = createGlobalStyle`
 
   html, body {
     background: #FFF;
+    width: 100%;
     height: 100%;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
-  }
-
-  h1 {
-    color: #fff;
-    font-size: 32px;
+    display: flex;
+    justify-content: center;
   }
 `;
 
