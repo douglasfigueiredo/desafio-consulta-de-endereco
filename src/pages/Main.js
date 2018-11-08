@@ -1,7 +1,17 @@
 import React from 'react';
+import { Container, Header, Form } from './styles';
 
 const Main = () => (
-  <h1>Sigle Page App</h1>
+  <Container>
+    <Header>
+      <p>Consultar</p>
+      <Form>
+        <span>CEP</span>
+        <input type="text" placeholder="Insira o CEP" />
+        <button type="submit">Buscar</button>
+      </Form>
+    </Header>
+  </Container>
 );
 
 export default Main;
