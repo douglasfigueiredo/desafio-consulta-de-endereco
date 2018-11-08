@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Maps from '../Maps';
+
 import { Container } from './styles';
 
 const SearchResult = () => (
@@ -8,6 +10,7 @@ const SearchResult = () => (
     <p>Vila Guilherme</p>
     <p>São Paulo - SP</p>
     <p>02050-010</p>
+    <Maps />
   </Container>
 );
 
