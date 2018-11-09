@@ -21,13 +21,13 @@ export const Header = styled.div`
   }
 `;
 
-export const Form = styled.div`
+export const Form = styled.form`
   display: flex;
   align-items: center;
   margin-top: 20px;
   width: 100%;
 
-  span {
+  span.cep {
     color: #444;
     font-size: 22px;
   }
@@ -42,18 +42,25 @@ export const Form = styled.div`
     border-radius: 3px;
     font-size: 14px;
     color #444;
+
+    border: ${({ withError }) => (withError ? '2px solid #F00' : 0)};
+
   }
 
   button {
+    width: 70px;
     height: 40px;
     padding: 0 10px;
     background: #5ba6de;
-    color: #FFF;
     font-size: 14px;
     font-weight: bold;
     border: 0;
     border-radius: 3px;
     cursor: pointer;
+
+    span.txt-button, i {
+      color: #FFF;
+    }
 
     &:hover {
       background: #2379ba;
