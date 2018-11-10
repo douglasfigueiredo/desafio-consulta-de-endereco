@@ -8,6 +8,10 @@ export const Container = styled.div`
   align-items: center;
   margin: 30px;
   font-family: Arial, Helvetica, sans-serif;
+
+  @media screen and (max-width: 599px) {
+    margin: 0!important;
+  }
 `;
 
 export const Header = styled.div`
