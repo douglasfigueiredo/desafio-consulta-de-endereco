@@ -2,9 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  width: 600px;
-  min-width: 420px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
   flex-direction: column;
   align-items: center;
   margin: 30px;
@@ -15,9 +14,14 @@ export const Header = styled.div`
   width: 100%;
   background: #ededed;
   padding: 30px;
-
   p {
     font-size: 20px;
+  }
+  @media screen and (max-width: 599px) {
+    padding: 15px;
+    p {
+      font-size: 14px;
+    }
   }
 `;
 
@@ -66,4 +70,21 @@ export const Form = styled.form`
       background: #2379ba;
     }
   }
+
+  @media screen and (max-width: 599px) {
+    span.cep {
+      font-size: 13px;
+    }
+    input {
+      height: 30px;
+      padding: 0 10px;
+      font-size: 13px;
+    }
+    button {
+      width: 70px;
+      height: 30px;
+      font-size: 13px;
+    }
+  }
+
 `;

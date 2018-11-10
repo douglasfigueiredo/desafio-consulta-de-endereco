@@ -3,14 +3,11 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
   margin-top: 3px;
   padding: 20px;
   color: #000;
   background: #FFF;
   border: 2px solid #ededed;
-
-  }
 
   .content-result {
     display: flex;
@@ -41,5 +38,9 @@ export const Container = styled.div`
 
   .map-image-wrapper {
     margin-top: 20px;
+  }
+
+  @media screen and (max-width: 599px) {
+    padding: 15px;
   }
 `;
