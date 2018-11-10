@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
     outline: 0;
   }
 
-  html, body {
+  html, body, div#root {
     background: #FFF;
     width: 100%;
     height: 100%;
