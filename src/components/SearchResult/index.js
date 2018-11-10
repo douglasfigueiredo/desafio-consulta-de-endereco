@@ -21,7 +21,6 @@ const SearchResult = ({ results, clearResult }) => (
             <p>{result.cep}</p>
           </div>
         </div>
-        {`${result.logradouro}, ${result.bairro}, ${result.localidade}`}
         <Maps positionCenter={`${result.logradouro}, ${result.bairro}, ${result.localidade}`} />
       </div>
     ))}
